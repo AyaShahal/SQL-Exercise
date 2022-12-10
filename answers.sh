@@ -34,3 +34,18 @@ WHERE Date <2000;
 FROM employees 
 WHERE Role = 'Graphic Designer';
 
+SELECT max(points)
+FROM students;
+SELECT avg(points)
+FROM students;
+SELECT Name 
+FROM students
+WHERE points='500';
+
+SELECT Name
+FROM students
+WHERE Name like '%s%';
+
+SELECT *
+FROM students
+ORDER BY Points DESC;
