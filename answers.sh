@@ -10,3 +10,14 @@ WHERE Name = 'Basma';
 UPDATE students
 SET Points = '100'
 WHERE Name = 'Alex';
+
+CREATE TABLE graduates AS
+ SELECT ID,Name,Age,Gender,Points
+ FROM students;
+ALTER TABLE graduates
+ADD Graduation datetime;
+UPDATE graduates
+SET Graduation = '08/09/2018'
+WHERE Name = 'Layal';
+DELETE FROM students
+WHERE ID = 4;
