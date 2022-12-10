@@ -21,3 +21,16 @@ SET Graduation = '08/09/2018'
 WHERE Name = 'Layal';
 DELETE FROM students
 WHERE ID = 4;
+
+
+SELECT employees.ID ,employees.Name,employees.Company ,companies.Date
+FROM employees
+INNER JOIN companies on employees.company=companies.Name;
+SELECT Name
+FROM  companies 
+WHERE Date <2000;
+
+ SELECT Name
+FROM employees 
+WHERE Role = 'Graphic Designer';
+
